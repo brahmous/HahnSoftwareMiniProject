@@ -7,7 +7,7 @@
 ### Running the .NET Backend.
 1. change direcotry into API directory which containes the backend.
 2. Execute `dotnet tool install --global dotnet-ef` to install Entity Framework Core.
-3. Execute `dotnet add package` to install the dependencies.
+3. Execute `dotnet restore` to install the dependencies.
 4. Run `docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=UU11ll//" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest` to start the databse. (Keep the password the same or change it in the connection string in `API/appSettings.json`)
 5. Set up the databse by executing `dotnet ef migrations add InitialCreate` then `
 dotnet ef database update`.

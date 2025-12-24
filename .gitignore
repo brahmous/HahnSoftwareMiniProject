@@ -1,0 +1,5 @@
+ui/node_modules
+ui/.next
+API/Migrations
+API/bin
+API/obj
